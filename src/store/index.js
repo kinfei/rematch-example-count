@@ -10,6 +10,13 @@ const store = init({
       name: "loading", // this creates a model called 'loading'
     }),
   ],
+  redux: {
+    devtoolOptions: {
+      disabled: !(
+        !process.env.NODE_ENV || process.env.NODE_ENV === "development"
+      ),
+    },
+  },
 });
 
 export default store;
