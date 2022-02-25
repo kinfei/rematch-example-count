@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { connect } from "react-redux";
 
-function App() {
+import { Button } from "antd";
+
+import "./App.css";
+
+function App({ count, dispatch, incrementLoading, decrementLoading }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="wrapper">
+      Current count is {count}
+      <div className="btnWrapper">
+        <Button
+          type="primary"
+          loading={incrementLoading}
+          onClick={() =>
+            dispatch.count.increment({
+              payload: { hehe: 1 },
+              callback: () => console.log(`in callback`),
+            })
+          }
         >
-          Learn React
-        </a>
-      </header>
+          Increment
+        </Button>
+
+        <Button
+          danger
+          loading={decrementLoading}
+          onClick={() => dispatch.count.decrement()}
+        >
+          Minus
+        </Button>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default connect(({ count, loading }) => ({
+  count,
+  incrementLoading: loading.effects.count.increment,
+  decrementLoading: loading.effects.count.decrement,
+}))(App);
