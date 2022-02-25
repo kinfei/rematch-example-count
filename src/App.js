@@ -19,7 +19,7 @@ function App({ count, dispatch, incrementLoading, decrementLoading }) {
             })
           }
         >
-          Increment
+          Increase
         </Button>
 
         <Button
