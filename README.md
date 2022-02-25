@@ -16,3 +16,5 @@ $ yarn start
 ```bash
 $ yarn build
 ```
+
+![Screenshot](screenshot.gif)
