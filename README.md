@@ -18,3 +18,9 @@ $ yarn start
 ```bash
 $ yarn build
 ```
+
+## How to Run Production Build
+
+```bash
+$ yarn serve
+```
