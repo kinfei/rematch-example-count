@@ -7,7 +7,7 @@ Example demonstrating usage of Rematch redux in React.
 ## How to Run
 
 ```bash
-$ git https://github.com/kinfei/rematch-example-count.git
+$ git clone https://github.com/kinfei/rematch-example-count.git
 $ cd rematch-example-count
 $ yarn install
 $ yarn start
