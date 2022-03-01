@@ -2,6 +2,7 @@
   "name": "rematch-example-count",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kinfei.github.io/rematch-example-count",
   "dependencies": {
     "@rematch/core": "2.2.0",
     "@rematch/loading": "2.1.2",
