@@ -2,8 +2,6 @@
 
 Example demonstrating usage of Rematch redux in React.
 
-![Screenshot](screenshot.gif)
-
 ## How to Run
 
 ```bash
