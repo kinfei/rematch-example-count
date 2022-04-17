@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://kinfei.github.io/rematch-example-count",
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@rematch/core": "2.2.0",
     "@rematch/loading": "2.1.2",
     "@testing-library/jest-dom": "5.16.4",
@@ -18,9 +19,9 @@
     "web-vitals": "2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "serve": "yarn build && serve -s build"
   },
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4"
   }
 }
