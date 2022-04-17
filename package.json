@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://kinfei.github.io/rematch-example-count",
   "dependencies": {
-    "@craco/craco": "^6.4.3",
+    "@craco/craco": "6.4.3",
     "@rematch/core": "2.2.0",
     "@rematch/loading": "2.1.2",
     "@testing-library/jest-dom": "5.16.4",
@@ -15,7 +15,7 @@
     "react-dom": "18.0.0",
     "react-redux": "8.0.0",
     "react-scripts": "5.0.1",
-    "redux": "^4.1.2",
+    "redux": "4.1.2",
     "web-vitals": "2.1.4"
   },
   "scripts": {
@@ -44,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-transform-remove-console": "^6.9.4"
+    "babel-plugin-transform-remove-console": "6.9.4"
   }
 }
