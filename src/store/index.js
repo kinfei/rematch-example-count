@@ -12,9 +12,10 @@ const store = init({
   ],
   redux: {
     devtoolOptions: {
-      disabled: !(
-        !process.env.NODE_ENV || process.env.NODE_ENV === "development"
-      ),
+      // disabled: !(
+      //   !process.env.NODE_ENV || process.env.NODE_ENV === "development"
+      // ),
+      disabled: false,
     },
   },
 });
